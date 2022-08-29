@@ -1,1 +1,25 @@
+c0 = {1,2,3,4,5,6,7,8,9,10}     #creaci�n de un conjunto universal
+set()#creacion de un conjunto vac�o
+
+c2 = {1,3,5,7,9}    #creaci�n de un conjunto
+c3 = {2,4,6,8,10}   #creaci�n de un conjunto
+c4 = {3,7,8,9}      #creaci�n de un conjunto
+
+c5 = c2&c4 #intersecci�n del conjunto c2 y c4, identifica los numero iguales que tengan entre si los conjuntos
+
+c6 = c2|c3 #union del conjunto c2 y c3, crea un solo conjunto.
+
+c7 = {1,3,5,7,9}    #creaci�n de un conjunto
+
+c8 = {1,2,3,4}  #creaci�n de un conjunto
+
+c9 = c7-c8      #diferencia del conjunto c7 y c8, obtendra los datos de c7 que no estan en c8.
+
+c10 = c4^c0     #diferencia simetrica de c4 y c0, obtendra los datos de c4 y c0, pero que no estan en ambos.
+
+
+print(c5)       #muestra la interseccion del conjunto c2 y c4
+print(c6)       #muestra la union del conjunto c2 y c3
+print(c9)       #muestra la diferencia descrita en c9
+print(c10)      #muestra la diferencia sim�trica descrita en c10.
 
