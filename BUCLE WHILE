@@ -1,0 +1,41 @@
+x = 0               #declaracoin de una variable entera
+while x <= 15:      #while es un ciclo que hasta que no se cumpla cierta condicion este sigue en uso
+        print(x)    #en este ejemplo es hasta que la variable sea igual o mayor a 15, para esto
+                    #cada ves que entra al ciclo se le suman cinco a la variable.
+        x = x + 5
+print('\n')
+
+y = 0
+while y >= -100:    #aqui la condicion es hasta que la variable sea menor o igual a -100
+        print(y)
+        y = y - 20  #decrementa de 20 en 20 la funcion hasta cumplir lo declarado
+print('\n')
+
+z = 10
+while z >= 0:           #se declara que la variable sea mayor o igual a 0
+    print("El valor del bucle es", z)
+    z = z -1        #se decrementa la variable de uno en uno
+
+print('\n\n\n')
+
+
+a = 0   #declaracion de una variable entera
+
+while a <= 30:  #la condicion es que la variable sea menor o igual a 30.
+    
+    print('El valor del bucle es:', a)
+    
+    #si la variable tiene valor de 15 se realiza la siguiente accion.
+    if a == 15:
+        print('Se rompio la ejecucion del bucle cuando a valia', a)
+        break   #break se usa para romper el ciclo while
+    a += 1         #se suma de uno en uno a la variable. 
+    if a == 4 or a == 6 or a == 10: #si la variable tiene valor de 4, 6 o 10 realizara lo indicado, en 
+                                    #este caso se brinca ese valor de la variable y lo indica
+        print('Se salto el valor ', a ,'de a')
+        a += 1                  #para brincarse ese valor se le suma uno a la variable
+        continue                #continue se usa para que se regrese al principio del bucle while
+   
+    
+   
+
