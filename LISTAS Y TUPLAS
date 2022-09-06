@@ -1,0 +1,19 @@
+lista=['rojo','azul','amarillo','negro','violeta']  #declaracion de una lista
+
+tupla=('rojo','azul','amarillo','negro','violeta')  #declaracion de una tupla y siempre es entre parentesis.
+
+print(lista)
+print(tupla)
+
+print('\n')
+print(tupla[0])
+
+print('\n')
+tupla=(10,15,20,"La suma es")
+print(tupla[0]+tupla[1]+tupla[2]) #se hace la suma de los elementos de una dupla, declarando el valor especifico a sumar
+
+tup=(234)
+
+
+tupla2=tuple(lista)         #Se transforma en tupla la lista con la funcion tuple
+lista2=list(tupla)          #Se transforma en lista la tupla con la funcion list
