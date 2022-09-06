@@ -1,0 +1,45 @@
+#DICCIIONARIOS
+teclado1 = {
+    "Categoria" : "Teclados",       #SE DECLARA UN DICCIONARIO DENTRO DE CORCHETES DE ESTA MANERA.   
+    "Modelo" : "HP",                 #CADA GRUPO Y LA INFORMACION CON DOS PUNTOS Y SEPARADA CON COMAS 
+    "Precio" : "1000"
+    }
+
+teclado2 = {
+    "Categoria" : "Teclados",
+    "Modelo" : "linux",
+    "Precio" : "5000"  
+    }
+
+dic0 = teclado2["Modelo"]               #AQUI SE DECLARA UNA VARIABLE EN LA CUAL SE QUIERE LEER LA INFORMACION 
+                                        #QUE TIENE EN MODELO.
+dic1 = teclado2["Precio"]               #DE LA MISMA MANERA AQUI, PERO EL PRECIO.
+
+print('El modelo '+dic0+' cuesta $'+dic1)   #SE DECLARA LA FUNCION PRINT PARA MOSTAR LOS VALORES SEÑALADOS.
+
+for x,y in teclado2.items():        #.items se utiliza para leer todos los campos de un diccionario, por medio del ciclo for se recorre cada campo
+    print('\n',x,': ',y)            #con x se recorre cada categoria y con 'y' se muestra la informacion
+
+del teclado1                        #con la funcion del se elimina por completo el diccionario declarado
+teclado2.pop('Categoria')           #tambien con .pop se puede eliminar en especifico la categoria de un diccionario.
+del teclado2['Precio']              #con del de igual manera pero especificando que categoria entre corchetes.
+print('\n\n',teclado2,'\n\n\n')
+
+copiatec = dict(teclado2)           #con la funcion dict() se puede copiar un diccionario en otra variable.
+print(copiatec)
+
+teclado3=('categoria','modelo','precio')          #declaracion de una tupla
+vacia = 'valor vacio'                           #cadena de strings
+teclado3 = dict.fromkeys(teclado3,vacia)          #con dict.fromkeys se crea un teclado con la tupla y a cada string se le asigna 
+                                                    #el valor de la variable que se quiere tomar en cuenta
+print('\n\n\n',teclado3)
+
+teclado2.update({'color' : 'azul'})             #con la funcion update se le asigna un campo al diccionario, como se muestra
+print('\n',teclado2)
+
+
+if 'precio' in teclado2:                            #por medio de un condicionante se puede saber si existe un campo en un diccionario.
+                                                    #declarando el campo y el diccionario donde se quiere buscar.
+    print('\ntiene un precio especificado')
+else:
+    print('\nno tiene precio\n\n ')
