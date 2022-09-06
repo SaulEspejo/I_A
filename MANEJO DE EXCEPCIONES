@@ -1,0 +1,9 @@
+#MANEJO DE EXCEPCIONES
+variable = 'correcto'
+
+try:
+    print(variable)                        #si la variable es correcta ejecuta el 'try', si no hace lo que dice, 
+                                           #la excepcion   
+except:
+    print('hay un error')
+
