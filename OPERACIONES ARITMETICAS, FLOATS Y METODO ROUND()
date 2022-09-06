@@ -1,0 +1,26 @@
+
+#capitulo del 7 al 10
+#OPERACIONES ARITMETICAS, FLOATS Y METODO ROUND()
+
+suma = 20+23+44     #realizacion de una suma aritmetica
+resta = 23-20-90    #realizacion de una resta aritmetica
+multiplicacion = 20*23*1.893    #realizacion de una multiplicacion aritmetica
+division = 5000/230/2.1         #realizacion de una division aritmetica    
+
+operacion = 10/5+15-17          #realizacion de una operacion aritmetica, incluyendo varias operaciones
+
+print(suma, resta, multiplicacion, division, operacion)     #mostrando el resultado de las operaciones, 
+                                                            #haciendo uso de la coma, para mostrar valores enteros por separado, 
+                                                            #porque si se utiliza un + como con los strings, sumaria los resultados
+
+potencia = 2*2*2*2*2*2*2*2*2*2    #realizando una multiplicacion del 2 hasta que de 1024
+p2=2**10                          #realizando una potencia para que de como resultado 1024, utilizando doble "*"                               
+
+print(potencia, p2)               #mostrando el resultado de la multiplicacion y la potencia en las variables potencia y p2
+
+
+num1=17.567383292929200234          #dato flotante, significca que tiene decimales
+
+print("\n",round(num1,5))           #mostrando l numero flotante, pero se redondea a 5 decimales con la funcion round
+
+
