@@ -1,0 +1,23 @@
+colores = ['rojo','azul','amrillo','negro']         #se declara una lista
+
+color = str(input('Que color quieres comprobar?\n'))    #se declara que el valor que ingrese el usuario sera de tipo string
+
+if color in colores:            #utiliza in para detectar si lo ingresado esta dentro de la lista, 
+                               #dependiendo el color realiza ciertas instrucciones
+    print('El color '+color+' esta admitido')
+else:
+    print('Color no admitido')
+
+
+
+
+x = 10
+z = 20          #se declaran variables enteras.
+y = 35
+
+if x < y and y > z:     #condiciones boleanas, and es para que se cumplan las dos.
+    print('\n\n\nSe cumple la condicion de AND')
+if z > x or x > y:              #or se utiliza para que si una de las dos condiciones se cumple se realice 
+                                #la instruccion
+    print('\nSe cumple la condicion de OR')
+
