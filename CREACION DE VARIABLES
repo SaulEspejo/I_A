@@ -1,0 +1,33 @@
+#TIPOS DE VARIABLES
+
+s1 = "HOLA MUNDO"    #variable que almacena el mensaje
+s2 = ',COMO TE LLAMAS'#variable que almacena el mensaje
+n1 = 100             #variable donde se declara el primer numero "100"
+n2 = 159             #variable donde se declara el segundo numero "159"
+n3 = n1 + n2        #variable donde se realiza y guarda la suma de las variables n1 y n2 "100 + 159"
+s3 = s1 + " " + s2  #variable donde se concatena y se guarda las variables s1y s2
+s4 = "ceti colomos" + " " + "inteligencia artificial"    #variable donde se concatenan y guardan dos strings
+s5 = s3 + " " + ", estoy aprendiendo a programar phyton"   #variable donde se se concaten la variable s3 con un string
+
+
+s6 = "Saul Alexis"              #variable que guarda un string
+s7 = "Espejo Ceballos"          #variable que guarda un string
+s8 = s6 + " " + s7              #variable donde se guarda y concatena las variables s6 y s7
+n4 = '201101'                   #variable donde se declara un valor numero como string
+n5 = '34'                       #variable donde se declara un valor numero como string, donde se emplea el uso de comillas simples
+n6 = n4 + n5                    #variables donde se concatena n4 y n5
+
+
+s9 = "toyota mr2 spyder"        #declarando y guardando un string
+s9 = s9.title()                 #aplicando el metodo title a la variabel s9, el cual pondra en mayusculas las iniciales de cada palabra    
+s10 = "CETI COLOMOS"            #declarando y guardando un string
+s10 = s10.lower()               #aplicando el metodo lower a la variable s10, donde convierte a minusculas el string.
+
+print(n3)           #funcion donde se indica que muestre o imprima el valor de la varible n3.
+print(s3)           #funcion donde imprime la variable s3
+print(s8,n6)        #funcion donde imprime la variable s8 y n6
+print(s9)           #funcion donde imprime la variable s9
+print(s10)          #funcion donde imprime la variable s10
+print(s9.upper())   #funcion donde imprime la variable s9, pero le aplica el metodo upper, donde convierte a mayusculas el string de la variable
+
+print("\n\n-Phyton.\n-JavaScript.\n-Java.\n-PHP.\n-TypeScript.\n-SQL.\n\t\t-COBOL.\n-C++.\n\t-HTML.\n")    #se emplea el uso de salto de lines con "\n" y tabulaciones con "\t"
