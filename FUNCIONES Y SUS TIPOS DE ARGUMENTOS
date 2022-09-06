@@ -1,0 +1,32 @@
+from inspect import ArgInfo   #se importa la libreria para poder crear funciones
+
+#FUNCIONES
+
+print('El resultado de la sumas es:\n')         #SE IMPRIME UN TEXTO PARA MOSTRAR RESULTADOS
+
+def suma(num1,num2):        #SE DECLARA UNA FUNCION LLAMADA SUMA CON DOS ARGUMENTOS.        
+    print(num1+num2)        #SI SE LLAMA A ESTA FUNCION HARA LA SUMA DE SUS DOS ARGUMENTOS
+
+suma(10,20)         #AQUI SE MANDA A LLMAR A LA FUNCION, DECLARANDO LOS ARGUMENTOS.
+suma(20,30)
+suma(56000,1000)
+
+def colores(*args):         #SE DECLARA UNA FUNCION, LA CUAL TENDRA CUALQUIER NUMERO DE ARGUMENTOS
+                            #CUANDO SE LLAMA ESTA FUNCION SE IMPRIME LOS ARGUMENTOS DECLARADOS INICIANDO DESDE EL CERO
+	print('\nEl color', args[1], 'es mi favorito.', 'El color', args[0], 'tampoco esta mal.\n') 
+
+colores('azul','rojo','naranja')    #SE MANDA A LLAMAR A LA FUNCION, DECLARANDO LOS ARGUMENTOS DE LA MISMA
+
+def suma0(*argumentos):      #SE DECLARA UNA FUNCION, LA CUAL TENDRA CUALQUIER NUMERO DE ARGUMENTOS      
+                            #EN OTRA VARIABLE SE GUARDA LO QUE SE REALIZARA CON LOS ARGUMENTOS, EN ESTE CASO UNA SUMA
+    resultado = argumentos[0] + argumentos[1] + argumentos[2] + argumentos[3] + argumentos[4]    
+    print('El resultado de la suma es: ',resultado)
+
+suma0(10,35,78,100,120)         #SE MANDA A LLAMAR LA FUNCION Y SE DECLARAN LOS ARGUMENTOS
+
+
+def colores1(**kwargs):             #SE DECLARA UNA FUNCION EN LA CUAL SE QUIERE MOSTRAR LOS VALORES DE UNA LISTA CON SUBAPARTADOS.
+    print('\n',kwargs['color1'])    #SE INDICA LO QUE REALIZARA LA FUNCION, EN ESTE EL APARTADO COLOR, VA MOSTRAR LO QUE CONTIENE.
+colores1(color1 = 'rojo', color2 = 'azul', color3 = 'naranja')  #DECLARACION DE UN DICCIONARIO CON SUS VALORES
+
+
