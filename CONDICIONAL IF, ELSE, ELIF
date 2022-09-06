@@ -1,0 +1,33 @@
+num0 = 10
+num1 = 10                       #declaracion de variables enteras
+num3 = 20
+
+#se hace la comparacion entre dos variables y si se cumple se cumple lo declarado, que es si son iguales las dos variables, 
+#en este caso un mensaje
+if num0 == num1:        
+    print('Es correcta la comparacion')         
+#aqui compara si una variable es diferente una de la otra en cuestion de su valor.
+if num0 != num3:
+    print('Son diferentes')
+print('\n\n')
+
+
+edad = 15   #declaracion de una variable
+if edad > 18:       #si el valor de la variable es mayor a 18 imprime el mensaje declarado
+    print('Eres mayor de edad')
+else:               #else sirve para que si el if no se cumple haga lo que esta indicado dentro de el.
+    print('Eres menor de edad!!!!!!!!')
+
+edad0 = 25
+if edad0 >= 18:     #aqui se utiliza compara si es mayor o igual al valor declarado
+    print('Tienes la suficiente edad'+'\n')
+
+
+edad1 = int(input("Cuantos anos tienes?\n"))      #aqui se interactua con el usuario por medio de input para que ingrese un valor
+if edad1 >= 1 and edad1 <= 17:  #se compara el valor ingresado si es mayor o igual a 1 y tambien debe cumplir que sea menor o igual a 17.
+    print('Eres menor de edad.\n')
+elif edad1 <= 0:        #aqui se utiliza 'elif' para usar varias opciones si no se cumple la primera.
+    print('Nadie tiene esa edad')
+elif edad1 <= 100:
+    print('Eres mayor de edad')
+
