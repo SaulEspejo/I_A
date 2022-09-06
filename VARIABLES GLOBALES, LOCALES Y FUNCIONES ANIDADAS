@@ -1,0 +1,28 @@
+#VARIABLES GLOBALES, LOCALES Y FUNCIONES ANIDADAS
+
+var2 = 'variable universal'        #se declara una variable universal
+
+def fun1(): #se declara una funcion
+    var1 = 'pertenece a la funcion'         #se declra una variable que solo pertenece a la funcion
+    print(var1)
+    var2 = 'pertenece dentro de la funcion' #se declra una variable que solo pertenece a la funcion
+    print(var2)
+                                        
+    def fun2():                 #SE CREA UNA FUNCION ANIDADA, LA CUAL PUEDE DISPONER DE LAS MISMAS VARIABLES.
+        var1 = 'se cambia el valor de la variable local'
+        print(var1)
+
+    fun2()      #CUANDO SE ANIDAN FUNCIONES SE CIERRAN CON EL MISMO NOBRE QUE SE DECLARO
+fun1()
+
+
+num1 = 50
+
+def fun3():
+    global num1      #se puede hacer uso dentro de la funcion de una variable global
+    num1 = 10        #tambien se pueden crear variables globales, usan la palabra global y delcarando la variable
+                     #si se declara la misma variable no sucede nada, es como si fuera de la funcion se le
+fun3()                #cambiara el valor a esa misma funcion
+
+print(num1)
+
