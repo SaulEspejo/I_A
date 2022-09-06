@@ -1,0 +1,20 @@
+#OPERACIONES ARITMETICAS, HORA Y FECHAS
+import math                         #SE IMPORTAN LAS LIBRERIAS NECESARIA PARA EMPLEAR LAS PALABRAS RESERVADAS
+import datetime, locale
+
+locale.setlocale(locale.LC_LL, 'es-ES')     #SE INDICA QUE DE LA FECHA EN ESPAÑOL
+
+def area(radio):                            #AQUI SE DECLARA UNA FUNCION QUE REALICE EL CALCULO DEL AREA DE UN
+    resultado = math.pi * radio * radio     #CIRCULO, SE UTILIZA 'PI', LLAMANDOLO MATH.PI
+
+area(2)
+
+fecha = datetime.datetime(2020, 9, 29)      #SE DECLARA UNA VARIABLE EN LA CUAL SE LE ASIGNO Y DA FORMATO DE FECHA
+print(fecha)                                #UTILIZANDO LA PALABRA RESERVADA datetime.datetime()
+
+
+fecha1 = datetime.datetime.now()        #SE MANDA A LLAMAR LA FUNCION DE date.time, PERO QUEREMOS LA FECHA REAL
+print('Ano: ',fecha1.year)              #ENTONCES SE LE AGREGA .now() PARA QUE ARROJE LA FECHA REAL
+print('Mes: ',fecha1,month)
+print('Dia: ',fecha1,day)
+
