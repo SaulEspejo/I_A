@@ -1,0 +1,15 @@
+#CICLO FOR
+#aqui se empleara el ciclo for
+for x in 'Saul':    #se declara dentro del bucle la v ariable y con 'in' se indica que imprima cada valor del string, letra por letra.
+    print(x)
+
+print('\n\n')
+
+colores = ('rojo', 'azul', 'verde', 'amarillo')     #se declra una lista
+for x in colores:                               #se indica dentro del ciclo for que x recorra cada elemento de la lista
+    print('El color es:',x,'.')                  #al recorrer  cada valor de la lista lo mostrara  
+
+print('\n\n')
+for x in range(7,700,100):  #aqui se utililiza la funcion 'range' en la cual se indica el valor inicial, el limite y en este caso de cuanto en cuanto 
+                            #sumara
+    print(x)                #se imprimen los valores hasta que llegue a 700
