@@ -1,0 +1,71 @@
+# "LISTAS"
+
+numeros = ['tres','dos','cinco','cuatro','uno']         #creacion de una lista en la variable numeros, siempre se utilizan corchetes,
+                                                        #y en los datos son entre comillas y separadas por comas
+
+#declarando una lista, en este caso nombres de colores
+colores=['rojo','azul','verde','amarillo','marron','lila','negro','rosa','blanco','naranja'] 
+#mostrando en especifica de la lista colores, se indica la lista y entre corchetes con numeros negativos cuenta del ultimo hacia atras
+#esto se utiliza cuando son listas con muchos datos
+print(colores[-1],colores[-7],colores[-5],colores[-2],colores[-10])
+
+#utilizando la funcion del para eliminar datos d euna lista, indicando la posicion especifica:
+del colores[1]
+del colores[3]
+del colores[-4]
+del colores[-3]
+
+print(colores)
+
+
+colors=['rojo','azul','verde','amarillo','marron','lila','negro','rosa','blanco','naranja'] 
+#utilizando la funcion remove, que se utiliza escribiendo el nombre de la lista, punto y se coloca la funcion remove y entre parentesis el dato y con comillas
+colors.remove('amarillo')
+colors.remove('rojo')
+
+print(colors)
+
+
+col=['morado','verde','amarillo','azul']
+#con la funcion pop se elimina una posicion especifica de la cadena.
+col2=col.pop(1)             
+print(col)
+print("El elemento eliminado de la lista col es:"+col2)
+
+#la funcion append agrega al ultimo lo que le señales dentro de la función
+col.append("verde")
+col.append("rojo")
+print('\n append')
+print(col)
+
+
+
+#con la funcion insert, se insertan en posiciones especificas de la cadena los strings señalados.
+ropa=['playera','pantalon','calcetines']
+ropa.insert(1,'camisa')
+ropa.insert(0,'gorra')
+ropa.insert(-2,'lentes')
+print('\n')
+print (ropa)
+
+
+numeros.sort()                      #ordena por alfabeto los strings de la cadena indicada.
+print('\n sort')
+print(numeros)
+numeros.sort(reverse=True)          #ordena alfabeticamente la cadena pero a la inversa.
+print(numeros)
+
+num=['violeta','azul','morado','negro','rojo']
+print('\n sorted')
+print(sorted(num))                  #ordena alfabeticamente la cadena, pero se utiliza solo en la funcion de print
+print(num)                          #aqui se demuestra que solo lo realiza una ves.
+
+
+print('\n len')
+print(len(numeros))                 #cuenta la cantidad de elementos o strings que tiene la cadena.
+
+
+
+
+
+
