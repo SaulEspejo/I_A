@@ -1,0 +1,49 @@
+#EXPRESIONES REGULARES
+
+import re   #IMPORTAMOS LA LIBRERIA NECESARIA 're'
+
+texto = "hola mundo"
+busqueda = re.search('o', texto)    #BUSCA EL CARACTER SEÑALADO Y EN CUALES STRINGS ESTA
+print (busqueda)
+
+
+texto1 = 'saul alexis espejo ceballos'
+busqueda1 = re.findall('a', texto1)                 #ARROJA LAS VECES EL CARACTER QUE ESTA EN LA CADENA
+print('\n', busqueda1)
+
+
+texto2 = 'Aquellos que no conocen la historia estan condenados a repetirla'
+resultado = re.split(' ',texto2)            #excluye EL CARACTER INDICADO
+print('\n',resultado)
+
+resultado1 = re.split(' ',texto2, 4)            #excluye especificamente PERO HASTA EL NUMERO QUE LE INDIQUES.
+print('\n',resultado1)
+
+resultado2 = re.sub(' ', '--&--', texto2)            #sustituye el valor buscado por el especificado
+print('\n', resultado2)
+
+resultado3 = re.sub(' ', '--&--', texto2,5)            #sustituye el valor buscado por el especificado y delimitado
+print('\n', resultado3)
+
+
+texto3 = 'siete septimos son siete mas de los que tienes'
+busqueda2 = re.findall('\Asiete', texto3)                #busca una coincidencia si el caracter señalado esta al principipo de la cadena
+print('\n', busqueda2)
+
+texto4 = '7 7 7 7 7 7 7 septimos son 9 8 5 2 3 siete mas de los que tienes'
+busqueda3 = re.findall('\D', texto4)                #busca los caracteres que no son digitos (numeros) y te arrojo los que si son
+print('\n', busqueda3)
+
+busqueda4 = re.findall('septi....',texto4)          #encuentra palabras que coincidan con los caracteres indicados
+print('\n', busqueda4)
+
+texto5 = '7 septimos son siete septimas mas de los que tienes'
+busqueda5 = re.findall('sep..m.s',texto5)          #encuentra palabras que coincidan con los caracteres indicados separados con puntos
+print('\n', busqueda5)
+
+texto6 = '7 septimos son siete septimas mas de los que tienes'
+busqueda6 = re.findall('septimos|septimas|siete|tienes',texto6)          #encuentra palabras que coincidan con las palabras indicadas
+print('\n', busqueda6)
+
+busqueda7 = re.findall('[ea]',texto6)          #encuentra los caracteres indicados entre corchetes
+print('\n', busqueda7)
