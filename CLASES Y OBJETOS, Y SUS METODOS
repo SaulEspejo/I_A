@@ -1,0 +1,53 @@
+#LISTAS
+
+from mailbox import NoSuchMailboxError
+from winreg import DeleteKey
+
+
+class naves():          #creacion de una lista
+    peso = 2500         #dando valores a los objetos de la lista
+    ancho = 45
+    color = 'negro'
+
+
+class usuarios():       #DECLARACION DE UNA CLASE
+
+    def __init__(self, nombre, pin, edad):  #SE DECLARA DENTRO DE UNA CLASE VARIAS FUNCIONES Y SUS ARGUMENTOS
+        self.nombre = nombre                 #se declara el valor que tendra cada argumento con self, para poder cambiar el valor de los objetos
+        self.pin = pin
+        self.edad = edad
+
+    def saludo(self):
+        print('\nSaludos ' + self.nombre + '. Iniciaste sesion.')   #se utiliza self en la funcion tambien, para que tnega cualquier valor.
+
+    def despedida(self):
+        print('\n',self.nombre + ' cerraste la sesion.')
+
+    def edad(self):
+        print('\nLe edad de ',self.nombre,' es:'+ self.edad)
+
+usu1 = usuarios('saul','2022', 56)          #se declaran objetos, las cuales se le asignan los atributos que tendra la clase
+usu2 = usuarios('maria', '223435', 25)
+
+usu1.saludo()   #se mandan a llamar las funciones de la clase, haciendo uso de las varibles que tienen difernetes argumentos
+usu1.despedida()
+usu2.saludo()
+usu2.despedida()
+
+
+
+del usu1.edad   #eliminacion de un atributo del objeto.
+del usu2        #eliminacion del objeto
+
+
+class usuarios_premium(usuarios):                   #creacion de una nueva clase y heredando de la principal con
+    def __init__(self, nombre, edad, insta):        #init, de esta manera se heredan los argumentos
+        usuarios.__init__(self,nombre,edad)
+        self.insta = insta
+    
+
+
+
+
+
+
